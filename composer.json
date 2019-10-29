@@ -1,0 +1,29 @@
+{
+    "name": "nickdavis/nd-contact-details",
+    "description": "WordPress plugin designed to help you manage the contact details for your website.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Davis",
+            "email": "nick@iamnickdavis.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6",
+        "phpstan/phpstan": "^0.11.5",
+        "vimeo/psalm": "^3.2",
+        "giacocorsiglia/wordpress-stubs": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "NickDavis\\ContactDetails\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NickDavis\\ContactDetails\\Tests\\": "tests/php/"
+        }
+    }
+}
